@@ -1,11 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>canal_tailwind_responsive</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/index.css">
+
 </head>
-<body>
-    
+
+<body class="m-0 p-0 m-4 md:m-8">
+    <header class="flex justify-between ">
+        <img src="./assets/img/canal2.svg" alt="">
+        <nav class=" flex gap-32 mt-6 ">
+            <a href=" #" class="hidden md:block">Accueil</a>
+            <a href="#" class="hidden md:block">Actualites</a>
+            <a href="#" class="hidden md:block">Programme</a>
+            <a href="#" class="hidden md:block">Direct</a>
+        </nav>
+        <img src="./assets/img/menu 1.svg" alt="phone" class="block md:hidden  ">
+        <button class=" hidden md:block border-2 border-black w-32 h-12 rounded-2xl bg-green-600 mt-4">Premium</button>
+
+    </header>
+
+    <div class=" flex flex-col  gap-6 md:flex-row md:jusitfy-between mt-20 bg-green-500 ">
+        <div class=" flex justify-center flex-1">
+            <div class=" w-full h-80  md:w-full h-auto rounded-3xl" id="nganou">
+                <div class=" flex pt-56 ml-4 gap-4">
+                    <div class="w-2 h-18 bg-green-700 "></div>
+                    <div>
+                        <div class="text-white w-80 h-[54px] font-bold text-lg">Il tape les gens pour vivre , françis
+                            Nganou
+                        </div>
+                        <div class="text-white text-sm ">Actu du 23 décembre 2023</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col  ml-16">
+            <div class="flex ">
+                <div class="w-2 h-8 bg-green-700 m-2"> </div>
+                <h1 class="mt-2 text-base font-semibold">À LA UNE DU JOUR</h1>
+            </div>
+            <div class="flex flex-col gap-6">
+                <div class="flex gap-4 ">
+                    <img src="./assets/img/enfants.svg" class=" flex-1 object-cover">
+                    <div class=" flex flex-col flex-1 justify-between">
+                        <h4 class="w-40  text-base font-semibold">L’école primaire de melon dans le choc</h4>
+                        <h5 class="w-48 text-sm">Lundi matin, le sous prefet du nyon-ekele est partie en visite dans son
+                            village natale ...</h5>
+                    </div>
+                </div>
+
+                <div class="flex gap-4">
+                    <img src="./assets/img/armee.svg" class="w-32 h-auto flex-1 object-cover">
+                    <div class=" flex flex-col flex-1 justify-between">
+                        <h4 class="w-40 text-base font-semibold">Manifestations pour la baisse des prix</h4>
+                        <h5 class="w-48 text-sm">Lundi matin, le sous prefet du nyon-ekele est partie en visite dans son
+                            village natale ...</h5>
+                    </div>
+                </div>
+
+                <div class="flex gap-4">
+                    <img src="./assets/img/ville.svg" class="w-32 h-auto flex-1 object-cover">
+                    <div class=" flex flex-col flex-1 justify-between">
+                        <h4 class="w-40 text-base font-semibold">Bientot un métro dans la capitale </h4>
+                        <h5 class="w-48 text-sm">Lundi matin, le sous prefet du nyon-ekele est partie en visite dans son
+                            village natale ...</h5>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
